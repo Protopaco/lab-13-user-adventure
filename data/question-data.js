@@ -83,5 +83,34 @@ export default [
                 img_src: './assets/alone-outward.jpg'
             }
                 }
+    },
+    {
+        id: 'partner',
+        preview: {
+            text: 'with your partner',
+            img_src: './assets/partner-thumb.jpg'
+                },
+        frame: {
+            text: "how do you hide your pain from your partner?",
+            img_src: './assets/partner-frame.jpg',
+        },
+        questions: {   
+            inward: {
+                id: 'inward',
+                text: 'Fatalistic thinking',
+                img_src: './assets/partner-inward.jpg',
+            },
+            shutdown: {
+                id: 'shutdown',
+                text: 'Not participating in sexy games',
+                img_src: './assets/partner-shutdown.jpg',
+            },
+            outward: {
+                id: 'outward',
+                text: 'Controlling their spending',
+                img_src: './assets/partner-outward.jpg'
+            }
+                }
     }
+
 ]

@@ -12,6 +12,7 @@ export function renderChoices() {
     title.textContent = `${userId}, how do you hide your pain?`;
     title.id = 'choice-title';
     section.appendChild(title);
+    section.classList.add('card-section');
     
     questionData.forEach(question => {
         let div = document.createElement('div');

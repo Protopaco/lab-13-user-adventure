@@ -38,13 +38,11 @@ export function renderResults(userId){
 
 
 function returnResult(userData) {
-    if (userData.inward > (userData.outward && userData.shutdown)){
-        console.log('inward');
+    if (userData.inward > userData.outward + userData.shutdown){
         return resultsData.inward;
-    } else if (userData.outward > (userData.inward && userData.shutdown)){
-        console.log('outward');
+    } else if (userData.outward > userData.inward + userData.shutdown){
         return resultsData.outward;
-    } else if (userData.shutdown > (userData.inward && userData.outward)){
+    } else if (userData.shutdown > userData.inward + userData.outward){
         return resultsData.shutdown;
     }
     return resultsData.balanced;

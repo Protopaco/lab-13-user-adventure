@@ -1,4 +1,5 @@
 import { setUserLocalStorage } from '../utils/manage-local-storage.js';
+import introImageList from '../data/intro-image-list.js';
 
 export function renderUserInput(){
     let section = document.createElement('section');
@@ -11,9 +12,10 @@ export function renderUserInput(){
 
     section.classList.add('user-input');
 
-    h1.textContent = 'How do you hide your pain?';
+    h1.textContent = 'How do you hide your pain? The Quiz!';
+    h1.id = 'user-input-title';
 
-    img.src = './assets/user-input.jpg';
+    img.src = returnRandomImage();
     img.id = 'user-input-photo';
 
     label.for = "id";
@@ -43,4 +45,10 @@ export function renderUserInput(){
     section.appendChild(form);
 
     return section;
+}
+
+function returnRandomImage(){
+    let imageIndex = Math.floor(Math.random() * introImageList.length);
+    console.log(introImageList);
+    return introImageList[imageIndex];
 }
