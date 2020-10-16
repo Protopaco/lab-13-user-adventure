@@ -103,25 +103,33 @@ footer {
     box-shadow: var(--shadow);
 }
 
+#user-input-title{
+    font-size: 2em;
+    font-weight: 2em;
+}
+
 form{
     margin-top: 50px;
 }
 
+.card-section{
+    margin-top: 0;
+}
 
 .card{
-    height: 250px;
+    height: 150px;
     width: 700px;
     display: flex;
    box-shadow: 5px 5px 5px;
    border: 1px solid black;
-   margin: 50px;
+   margin: 25px;
 }
 .card:active{
     box-shadow: 4px 4px 4px;
 }
 
 .preview-image{
-    height: 250px;
+    height: 100%;
 }
 
 .preview-text{

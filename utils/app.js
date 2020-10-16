@@ -1,5 +1,6 @@
 // import functions and grab DOM elements
 import { getUserLocalStorage, setUserLocalStorage } from './manage-local-storage.js';
+import questionData from '../data/results-data.js';
 import { renderUserInput } from './render-user-input.js';
 import { renderChoices } from './render-choices.js';
 import { renderQuestion } from './render-question.js';
@@ -12,7 +13,6 @@ let searchParams = new URLSearchParams(window.location.search);
 const mainSection = document.getElementById('main-section');
 const userId = searchParams.get('id');
 const userObject = getUserLocalStorage(userId);
-console.log(userId)
 
 mainSection.innerHTML = '';
 let element;
@@ -21,26 +21,24 @@ if (!userId) {
     element = renderUserInput();
 
 } else if (searchParams.get('page') === 'question'){
-    element = renderQuestion(searchParams.get('name'));
+    element = renderQuestion();
 
 } else if (searchParams.get('page') === 'answer'){
     let answer = searchParams.get('answer');
     userObject[answer] += 1;
     userObject.completed.push(searchParams.get('question'))
-    setUserLocalStorage(userId, userObject);
+    setUserLocalStorage(userObject);
 
-    console.log(userObject);
-
-    if (userObject.completed.length < 3){
-        element = renderChoices(userId);
+    if (userObject.completed.length < Object.keys(questionData).length){
+        element = renderChoices();
     } else {
-        element = renderResults(userId);
+        element = renderResults();
     }
 }
 
  else {
-    element = renderChoices(userId);
-    // mainSection.appendChild(element);
+    element = renderChoices();
+
     }
 
 mainSection.appendChild(element);

@@ -1,7 +1,8 @@
 import questionData from '../data/question-data.js';
 
-export function renderQuestion (questionName){
+export function renderQuestion (){
     let searchParams = new URLSearchParams(window.location.search);
+    let questionName = searchParams.get('name');
     let commaString = ', ';
     let currentQuestion = {};
     let userId = searchParams.get('id');

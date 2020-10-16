@@ -1,15 +1,18 @@
 import questionData from '../data/question-data.js';
 import { getUserLocalStorage } from './manage-local-storage.js';
 
-export function renderChoices(userId) {
-    let userObject = getUserLocalStorage(userId);
+export function renderChoices() {
+    let userObject = getUserLocalStorage();
+    let userId = userObject.name;
 
+    console.log(userObject);
     let section = document.createElement('section');
     let title = document.createElement('p');
 
     title.textContent = `${userId}, how do you hide your pain?`;
     title.id = 'choice-title';
     section.appendChild(title);
+    section.classList.add('card-section');
     
     questionData.forEach(question => {
         let div = document.createElement('div');
