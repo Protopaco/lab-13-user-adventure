@@ -1,6 +1,9 @@
 import questionData from '../data/question-data.js';
+import { getUserLocalStorage } from './manage-local-storage.js';
 
 export function renderChoices() {
+    let userObject = getUserLocalStorage();
+
     let section = document.createElement('section');
     let title = document.createElement('p');
 
@@ -14,8 +17,15 @@ export function renderChoices() {
         let span = document.createElement('span');
         
         div.classList.add('card');
-        div.onclick = function (){
-            location.href= `?id=question&name=${question.id}`;
+        console.log(userObject.completed);
+        console.log(question.id);
+
+        if (userObject.completed.includes(question.id)){
+            div.classList.add('completed');
+        } else {
+            div.onclick = function (){
+                location.href= `?id=question&name=${question.id}`;
+            }
         }
 
         img.src = question.preview.img_src;

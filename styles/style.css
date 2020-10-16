@@ -159,3 +159,13 @@ form{
     font-size: 3em;
     margin-bottom: 50px;
 }
+
+.completed{
+    background-color: gray;
+    box-shadow: none;
+
+}
+
+.completed:active{
+    box-shadow: none;
+}
