@@ -1,6 +1,6 @@
 // import functions and grab DOM elements
-import { getUserLocalStorage, setUserLocalStorage } from '../utils/manage-local-storage.js';
-import { renderUserInput } from '../utils/render-user-input.js';
+import { getUserLocalStorage, setUserLocalStorage } from './utils/manage-local-storage.js';
+import { renderUserInput } from './utils/render-user-input.js';
 import { renderChoices } from './utils/render-choices.js';
 import { renderQuestion } from './utils/render-question.js';
 // initialize state
