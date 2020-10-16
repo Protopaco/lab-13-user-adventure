@@ -21,25 +21,25 @@ if (!userId) {
     element = renderUserInput();
 
 } else if (searchParams.get('page') === 'question'){
-    element = renderQuestion(searchParams.get('name'));
+    element = renderQuestion();
 
 } else if (searchParams.get('page') === 'answer'){
     let answer = searchParams.get('answer');
     userObject[answer] += 1;
     userObject.completed.push(searchParams.get('question'))
-    setUserLocalStorage(userId, userObject);
+    setUserLocalStorage(userObject);
 
     console.log(userObject);
 
     if (userObject.completed.length < 3){
-        element = renderChoices(userId);
+        element = renderChoices();
     } else {
-        element = renderResults(userId);
+        element = renderResults();
     }
 }
 
  else {
-    element = renderChoices(userId);
+    element = renderChoices();
     // mainSection.appendChild(element);
     }
 
