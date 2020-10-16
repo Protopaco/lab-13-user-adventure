@@ -169,3 +169,23 @@ form{
 .completed:active{
     box-shadow: none;
 }
+
+#results-section{
+    width: 900px;
+}
+
+#results-title{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#results-text{
+    margin-top: 50px;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+#results-button{
+    margin-top: 50px;
+    
+}
