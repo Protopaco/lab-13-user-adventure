@@ -1,5 +1,0 @@
-import questionData from '../questionData.js';
-
-export function (questionName){
-
-}

@@ -17,14 +17,12 @@ export function renderChoices() {
         let span = document.createElement('span');
         
         div.classList.add('card');
-        console.log(userObject.completed);
-        console.log(question.id);
 
         if (userObject.completed.includes(question.id)){
             div.classList.add('completed');
         } else {
             div.onclick = function (){
-                location.href= `?id=question&name=${question.id}`;
+                location.href= `?id=${userObject.name}&page=question&name=${question.id}`;
             }
         }
 

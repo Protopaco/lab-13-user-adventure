@@ -17,11 +17,12 @@ let element;
 if (!searchParams.get('id')) {
     element = renderUserInput();
 
-} else if (searchParams.get('id') === 'question'){
+} else if (searchParams.get('page') === 'question'){
     element = renderQuestion(searchParams.get('name'));
+
 } else if (searchParams.get('id') === 'answer'){
-    let answer = searchParams.get('id');
-    userObject[answer] ++;
+    let answer = searchParams.get('name');
+    userObject[answer] += 1;
     userObject.completed.push(searchParams.get('question'))
     setUserLocalStorage(userObject);
     console.log(userObject);

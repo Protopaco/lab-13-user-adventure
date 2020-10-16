@@ -7,7 +7,7 @@ export default [
             img_src: '../assets/friends-thumb.jpg'
                 },
         frame: {
-            text: 'How do you hide your pain from your friends?',
+            text: 'how do you hide your pain from your friends?',
             img_src: '../assets/friends-frame.jpg',
         },
         questions: {   
@@ -35,7 +35,7 @@ export default [
             img_src: '../assets/work-thumb.jpg'
                 },
         frame: {
-            text: 'How do you hide your pain at work?',
+            text: 'how do you hide your pain at work?',
             img_src: '../assets/work-frame.jpg',
         },
         questions: {   
@@ -63,7 +63,7 @@ export default [
             img_src: '../assets/alone-thumb.jpg'
                 },
         frame: {
-            text: "How do you hide your pain when you're alone?",
+            text: "how do you hide your pain when you're alone?",
             img_src: '../assets/alone-frame.jpg',
         },
         questions: {   
