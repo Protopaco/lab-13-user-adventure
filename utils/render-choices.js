@@ -7,7 +7,7 @@ export function renderChoices(userId) {
     let section = document.createElement('section');
     let title = document.createElement('p');
 
-    title.textContent = 'How do you hide your pain?';
+    title.textContent = `${userId}, how do you hide your pain?`;
     title.id = 'choice-title';
     section.appendChild(title);
     

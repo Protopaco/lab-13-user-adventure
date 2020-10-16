@@ -14,7 +14,6 @@ const userId = searchParams.get('id');
 const userObject = getUserLocalStorage(userId);
 console.log(userId)
 
-
 mainSection.innerHTML = '';
 let element;
 
