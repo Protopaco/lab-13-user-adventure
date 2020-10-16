@@ -1,12 +1,10 @@
 
-// const userKey = 'USER_';
+const userKey = 'USER_';
 
-export function setUserLocalStorage(userKey, object){
-    console.log('key: ' +userKey);
-    console.log('object: ' +object);
+export function setUserLocalStorage(object){
     localStorage.setItem(userKey, JSON.stringify(object));
 }
 
-export function getUserLocalStorage(userKey){
+export function getUserLocalStorage(){
     return JSON.parse(localStorage.getItem(userKey));
 }

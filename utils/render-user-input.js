@@ -24,7 +24,7 @@ export function renderUserInput(){
     button.id = 'submit';
     button.textContent = 'submit';
     button.onclick =function () {
-        setUserLocalStorage(input.value, {
+        setUserLocalStorage({
             name: input.value,
             inward: 0,
             outward: 0,

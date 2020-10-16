@@ -12,14 +12,17 @@ export default [
         },
         questions: {   
             inward: {
+                id: 'inward',
                 text: 'Ignoring them',
                 img_src: '../assets/friends-inward.jpg',
             },
             shutdown: {
+                id: 'shutdown',
                 text: 'Leaving early',
                 img_src: '../assets/friends-shutdown.jpg',
             },
             outward: {
+                id: 'outward',
                 text: 'Talking trash',
                 img_src: '../assets/friends-outward.jpg'
             }
@@ -37,14 +40,17 @@ export default [
         },
         questions: {   
             inward: {
+                id: 'inward',
                 text: 'Drinking',
                 img_src: '../assets/work-inward.jpg',
             },
             shutdown: {
+                id: 'shutdown',
                 text: 'Inappropriate naps',
                 img_src: '../assets/work-shutdown.jpg',
             },
             outward: {
+                id: 'outward',
                 text: 'Lashing out',
                 img_src: '../assets/work-outward.jpg'
             }
@@ -62,14 +68,17 @@ export default [
         },
         questions: {   
             inward: {
+                id: 'inward',
                 text: 'Overeating',
                 img_src: '../assets/alone-inward.jpg',
             },
             shutdown: {
+                id: 'shutdown',
                 text: 'Drugs',
                 img_src: '../assets/alone-shutdown.jpg',
             },
             outward: {
+                id: 'outward',
                 text: 'Internet trolling',
                 img_src: '../assets/alone-outward.jpg'
             }
