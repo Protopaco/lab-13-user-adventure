@@ -1,6 +1,6 @@
 
-export default {
-    friends: {
+export default [
+    {
         id: 'friends',
         preview: {
             text: 'with friends',
@@ -25,7 +25,7 @@ export default {
             }
                 }
         },
-    work: {
+    {
         id: 'work',
         preview: {
             text: 'at work',
@@ -50,7 +50,7 @@ export default {
             }
                 }
     },
-    alone: {
+    {
         id: 'alone',
         preview: {
             text: 'alone',
@@ -75,4 +75,4 @@ export default {
             }
                 }
     }
-}
+]

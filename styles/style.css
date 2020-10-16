@@ -38,8 +38,7 @@ main {
 
 section {
     background-color: var(--color5);
-    width: 1000px;
-    max-width: 80%;
+    width: 1500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -48,7 +47,6 @@ section {
     padding-bottom: var(--gutter);
     margin-top: var(--gutter);
     margin-bottom: var(--gutter);
-    border: solid 2px var(--color1);
 }
 
 header {
@@ -133,4 +131,31 @@ form{
     font-weight: 700;
     justify-content: center;
     align-items: center;
+}
+
+#choice-title{
+    font-size: 3em;
+}
+
+#question-section{
+    width: 100%;
+}
+
+.question-card-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.question-card-image{
+    width: 90%;
+}
+
+.question-card-text{
+    font-size: 2em;
+}
+
+.question-title{
+    font-size: 3em;
+    margin-bottom: 50px;
 }
